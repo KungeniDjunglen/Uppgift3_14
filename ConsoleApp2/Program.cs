@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Uppgift_2._1
 {
@@ -6,21 +6,24 @@ namespace Uppgift_2._1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hur gammla är du?");
+            Console.WriteLine("Har du nyligen gått ut gymnasiet? j/n ");
+            string svar1 = Console.ReadLine();
+            Console.WriteLine("Hur gammal är du? ");
             int age = int.Parse(Console.ReadLine());
-            if (age <= 16)
+
+            
+
+            if (svar1 == "j" & age <= 21)
             {
-                Console.WriteLine("Du är för ung");
-            }
-            else if (age >= 16 & age <= 20)
-            {
-                Console.WriteLine("Du är i rätt åldersgrupp");
+                
+                
+                 Console.WriteLine("Vi vill gärna anställa dig ");
+                
             }
             else
             {
-                Console.WriteLine("Du är för gammal");
+                Console.WriteLine("Vi letar efter annan personal just nu ");
             }
-            
         }
     }
 }
